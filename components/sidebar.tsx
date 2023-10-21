@@ -15,7 +15,7 @@ type SidebarProps = {
 export function Sidebar({ onButtonClick }: SidebarProps) {
   const [select, setSelect] = useState("Home");
   return (
-    <div className="pb-12 border-r border-gray-500 max-w-xs h-100">
+    <div className="pb-12 border-r border-gray-500 max-w-xs h-100 hidden md:block">
       <ScrollArea className="h-[100vh] px-1 space-y-4 py-4">
         <div className="space-y-1">
           <Button

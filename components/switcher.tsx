@@ -5,7 +5,7 @@ import Home from "./script_pages/home";
 export function Switcher({ content }: { content: string }) {
   console.log(content);
   return (
-    <div className="flex-grow p-10">
+    <div className="flex-grow p-10 w-full h-screen">
       {content === "Home" && <Home />}
       {content === "Check&Kill Port Content" && <CheckKillPort />}
       {content === "Front-end Frameworks initialize" && (

@@ -1,8 +1,8 @@
+"use client";
 import { Button } from "@/components/ui/button";
 
 export default function CheckKillPort() {
   const handleDownload = () => {
-    // 创建一个新的隐藏的下载链接
     const link = document.createElement("a");
     link.href = "/scripts/Check&Kill_PORTs.applescript"; // 文件的路径
     link.download = "Check&Kill_PORTs.applescript"; // 提议的文件名
@@ -12,7 +12,7 @@ export default function CheckKillPort() {
   };
   return (
     <div className="flex flex-col justify-evenly items-center w-full h-full">
-      <h1 className="font-bold text-5xl antialiased italic">
+      <h1 className="font-bold text-2xl antialiased italic text-center md:text-5xl">
         Check and Kill Opening Ports
       </h1>
       <video width="960" height="720" controls>
