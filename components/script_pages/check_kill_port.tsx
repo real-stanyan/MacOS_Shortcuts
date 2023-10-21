@@ -1,4 +1,3 @@
-"use client";
 import { Button } from "@/components/ui/button";
 
 export default function CheckKillPort() {
@@ -12,10 +11,10 @@ export default function CheckKillPort() {
   };
   return (
     <div className="flex flex-col justify-evenly items-center w-full h-full">
-      <h1 className="font-bold text-2xl antialiased italic text-center md:text-5xl">
+      <h1 className="font-bold text-2xl antialiased italic text-center my-3 md:text-5xl">
         Check and Kill Opening Ports
       </h1>
-      <video width="960" height="720" controls>
+      <video className="custom-video" width="960" height="720" controls>
         <source src="/videos/check_kill_port.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>

@@ -30,7 +30,7 @@ export function Header({ onButtonClick }: SidebarProps) {
   const [position, setPosition] = React.useState("Home");
 
   return (
-    <div className="flex p-3 border-b justify-between border-gray-500 w-100 max-h-72">
+    <div className="flex p-3 border-b justify-between border-gray-500 w-100 h-[60px]">
       {/* header left part */}
       <div className="flex items-center">
         <Image

@@ -15,7 +15,7 @@ type SidebarProps = {
 export function Sidebar({ onButtonClick }: SidebarProps) {
   const [select, setSelect] = useState("Home");
   return (
-    <div className="pb-12 border-r border-gray-500 max-w-xs h-100 hidden md:block">
+    <div className="pb-12 border-r border-gray-500 max-w-xs h-100 hidden text-left md:block">
       <ScrollArea className="h-[100vh] px-1 space-y-4 py-4">
         <div className="space-y-1">
           <Button
@@ -58,7 +58,11 @@ export function Sidebar({ onButtonClick }: SidebarProps) {
           </h2>
           <div className="space-y-1">
             <Button
-              variant="ghost"
+              variant={
+                select === "Front-end Frameworks initialize"
+                  ? "secondary"
+                  : "ghost"
+              }
               className="w-full justify-start"
               onClick={() => {
                 onButtonClick("Front-end Frameworks initialize");
@@ -81,7 +85,9 @@ export function Sidebar({ onButtonClick }: SidebarProps) {
                 <path d="M16 6H3" />
                 <path d="M12 18H3" />
               </svg>
-              Front-end Frameworks initialize
+              <p className="whitespace-nowrap">
+                Front-end Frameworks initialize
+              </p>
             </Button>
           </div>
         </div>

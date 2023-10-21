@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-evenly items-center w-full h-full">
+    <div className="flex flex-col flex-grow justify-evenly items-center h-pageHight">
       <Image
         src={"/macscripts.png"}
         alt="MacScript ICON"

@@ -10,9 +10,9 @@ export default function Home() {
   const [content, setContent] = useState("Home");
 
   return (
-    <main className="w-full h-full">
+    <main>
       <Header onButtonClick={setContent} />
-      <div className="flex">
+      <div className="flex max-h-pageHight">
         <Sidebar onButtonClick={setContent} />
         <Switcher content={content} />
       </div>
