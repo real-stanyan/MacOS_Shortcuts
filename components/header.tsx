@@ -32,7 +32,12 @@ export function Header({ onButtonClick }: SidebarProps) {
   return (
     <div className="flex p-3 border-b justify-between border-gray-500 w-100 h-[60px]">
       {/* header left part */}
-      <div className="flex items-center">
+      <div
+        className="flex items-center cursor-pointer"
+        onClick={() => {
+          onButtonClick("Home");
+        }}
+      >
         <Image
           src={"/macscripts.png"}
           alt="MacScript ICON"
