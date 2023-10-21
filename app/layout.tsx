@@ -8,7 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "MacScripts",
-  description: "Collection of scripts for macOS",
+  description:
+    "A curated collection of useful scripts to boost productivity on macOS. Enhance your Mac experience with these tools.",
 };
 
 export default function RootLayout({
