@@ -659,20 +659,17 @@ video {
 .mb-2 {
   margin-bottom: 0.5rem;
 }
-.ml-auto {
-  margin-left: auto;
-}
-.mr-2 {
-  margin-right: 0.5rem;
-}
-.ml-5 {
-  margin-left: 1.25rem;
-}
 .ml-2 {
   margin-left: 0.5rem;
 }
+.ml-auto {
+  margin-left: auto;
+}
 .mr-1 {
   margin-right: 0.25rem;
+}
+.mr-2 {
+  margin-right: 0.5rem;
 }
 .flex {
   display: flex;
@@ -707,14 +704,17 @@ video {
 .h-\[1\.2rem\] {
   height: 1.2rem;
 }
-.h-\[300px\] {
-  height: 300px;
+.h-\[100vh\] {
+  height: 100vh;
 }
 .h-full {
   height: 100%;
 }
 .h-px {
   height: 1px;
+}
+.max-h-72 {
+  max-height: 18rem;
 }
 .w-2 {
   width: 0.5rem;
@@ -742,9 +742,6 @@ video {
 }
 .min-w-\[8rem\] {
   min-width: 8rem;
-}
-.max-w-xl {
-  max-width: 36rem;
 }
 .max-w-xs {
   max-width: 20rem;
@@ -784,6 +781,12 @@ video {
      -moz-user-select: none;
           user-select: none;
 }
+.flex-col {
+  flex-direction: column;
+}
+.content-center {
+  align-content: center;
+}
 .items-center {
   align-items: center;
 }
@@ -795,6 +798,9 @@ video {
 }
 .justify-between {
   justify-content: space-between;
+}
+.justify-evenly {
+  justify-content: space-evenly;
 }
 .space-y-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -830,11 +836,11 @@ video {
 .border-l {
   border-left-width: 1px;
 }
-.border-t {
-  border-top-width: 1px;
-}
 .border-r {
   border-right-width: 1px;
+}
+.border-t {
+  border-top-width: 1px;
 }
 .border-gray-500 {
   --tw-border-opacity: 1;
@@ -885,8 +891,14 @@ video {
 .p-\[1px\] {
   padding: 1px;
 }
-.p-0 {
-  padding: 0px;
+.p-5 {
+  padding: 1.25rem;
+}
+.p-9 {
+  padding: 2.25rem;
+}
+.p-10 {
+  padding: 2.5rem;
 }
 .px-1 {
   padding-left: 0.25rem;
@@ -953,14 +965,28 @@ video {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
 .font-medium {
   font-weight: 500;
 }
-.font-normal {
-  font-weight: 400;
-}
 .font-semibold {
   font-weight: 600;
+}
+.font-black {
+  font-weight: 900;
+}
+.font-bold {
+  font-weight: 700;
+}
+.italic {
+  font-style: italic;
 }
 .tracking-tight {
   letter-spacing: -0.025em;
@@ -985,6 +1011,10 @@ video {
 }
 .underline-offset-4 {
   text-underline-offset: 4px;
+}
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .opacity-60 {
   opacity: 0.6;

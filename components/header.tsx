@@ -19,7 +19,7 @@ export function Header() {
   const { setTheme } = useTheme();
 
   return (
-    <div className="flex p-3 border-b justify-between border-gray-500 w-100">
+    <div className="flex p-3 border-b justify-between border-gray-500 w-100 max-h-72">
       {/* header left part */}
       <div className="flex items-center">
         <Image
